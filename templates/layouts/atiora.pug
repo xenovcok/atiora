@@ -80,10 +80,43 @@ html
 				nav(class='navbar navbar-default')
 					div(class='container')
 						div(class='navbar-header')
-							a(class='navbar-brand', href='#') Atiora
+							a(class='navbar-brand', href='#')
+								img(src='/images/atiora-logo.png', alt='Atiora Indonesia')
 						ul(class='nav navbar-nav pull-right')
-							li
-								a(href='#') Company
+							li(class='dropdown mega-dropdown')
+								a(href='#', class='dropdown-toggle', data-toggle='dropdown') Company
+									span(class="caret")
+								ul(class='dropdown-menu mega-menu')
+									li(class='mega-menu-column')
+										ul
+											li(class='nav-header') Megamenu 1
+											img(src="http://placehold.it/150x120")
+											li
+												a(href='#') Megamenu link 1
+											li
+												a(href='#') Megamenu link 2
+											li
+												a(href='#') Megamenu link 3
+									li(class='mega-menu-column')
+										ul
+											li(class='nav-header') Megamenu 2
+											img(src="http://placehold.it/150x120")
+											li
+												a(href='#') Megamenu link 1
+											li
+												a(href='#') Megamenu link 2
+											li
+												a(href='#') Megamenu link 3
+									li(class='mega-menu-column')
+										ul
+											li(class='nav-header') Megamenu 3
+											img(src="http://placehold.it/150x120")
+											li
+												a(href='#') Megamenu link 1
+											li
+												a(href='#') Megamenu link 2
+											li
+												a(href='#') Megamenu link 3
 							li
 								a(href='#') Trading
 							li
@@ -140,6 +173,9 @@ html
 			script(src='/keystone/js/content/editor.js')
 
 		//- Add scripts that are globally required by your site here.
-
 		//- Include template-specific javascript files by extending the js block
 		block js
+		//-script(src='/js/custom/custom.js')
+		script(src='/js/cbpHorizontalMenu.js')
+		script(src='/js/cbpHorizontalMenu.min.js')
+		script(src='/js/modernizr.custom.js')
