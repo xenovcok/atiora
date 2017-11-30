@@ -77,48 +77,116 @@ html
 									a(href='#')
 										span  F.A.Q
 			div(class='menu')
-				nav(class='navbar navbar-default')
+				nav(class='yamm navbar navbar-default')
 					div(class='container')
 						div(class='navbar-header')
 							a(class='navbar-brand', href='#')
 								img(src='/images/atiora-logo.png', alt='Atiora Indonesia')
 						ul(class='nav navbar-nav pull-right')
-							li(class='dropdown mega-dropdown')
+							li(class='dropdown yamm-fw mega-dropdown')
 								a(href='#', class='dropdown-toggle', data-toggle='dropdown') Company
 									span(class="caret")
-								ul(class='dropdown-menu mega-menu')
-									li(class='mega-menu-column')
-										ul
-											li(class='nav-header') Megamenu 1
-											img(src="http://placehold.it/150x120")
-											li
-												a(href='#') Megamenu link 1
-											li
-												a(href='#') Megamenu link 2
-											li
-												a(href='#') Megamenu link 3
-									li(class='mega-menu-column')
-										ul
-											li(class='nav-header') Megamenu 2
-											img(src="http://placehold.it/150x120")
-											li
-												a(href='#') Megamenu link 1
-											li
-												a(href='#') Megamenu link 2
-											li
-												a(href='#') Megamenu link 3
-									li(class='mega-menu-column')
-										ul
-											li(class='nav-header') Megamenu 3
-											img(src="http://placehold.it/150x120")
-											li
-												a(href='#') Megamenu link 1
-											li
-												a(href='#') Megamenu link 2
-											li
-												a(href='#') Megamenu link 3
-							li
-								a(href='#') Trading
+								ul(class='dropdown-menu')
+									li
+										.yamm-content.container
+											.row
+												.col-sm-2.br.first-column
+													p 
+														ul
+															li
+																a(class='btn btn-success btn-block') OPEN ACCOUNT
+															li
+																a(class='btn btn-primary btn-block') PERSONAL AREA
+												.col-sm-10
+													.row
+														.col-sm-3.link-list
+															p
+																ul
+																	li
+																		i(class='fa fa-globe')
+																		a(href='#')  About Us
+																	li
+																		i(class='fa fa-shield')
+																		a(href='#')  Funds Security
+														.col-sm-3.link-list
+															p
+																ul
+																	li
+																		i(class='fa fa-globe')
+																		a(href='#')  Regulation
+																	li
+																		i(class='fa fa-shield')
+																		a(href='#')  Forex Liquidity
+														.col-sm-3.link-list
+															p
+																ul
+																	li
+																		i(class='fa fa-globe')
+																		a(href='#')  Atiora Advantages
+																	li
+																		i(class='fa fa-shield')
+																		a(href='#')  Company News
+														.col-sm-3.link-list
+															p
+																ul
+																	li
+																		i(class='fa fa-globe')
+																		a(href='#')  Legal Agreements
+																	li
+																		i(class='fa fa-shield')
+																		a(href='#')  Atiora Rewards
+							li(class='dropdown yamm-fw mega-dropdown')
+								a(href='#', class='dropdown-toggle', data-toggle='dropdown') Trading
+									span(class="caret")
+								ul(class='dropdown-menu')
+									li
+										.yamm-content.container
+											.row
+												.col-sm-2.br.first-column
+													p 
+														ul
+															li
+																a(class='btn btn-success btn-block') OPEN ACCOUNT
+															li
+																a(class='btn btn-primary btn-block') PERSONAL AREA
+												.col-sm-10
+													.row
+														.col-sm-3.link-list
+															p
+																ul
+																	li
+																		i(class='fa fa-globe')
+																		a(href='#')  Account Types
+																	li
+																		i(class='fa fa-shield')
+																		a(href='#')  One-Click Execution
+														.col-sm-3.link-list
+															p
+																ul
+																	li
+																		i(class='fa fa-globe')
+																		a(href='#')  Trading Platform
+																	li
+																		i(class='fa fa-shield')
+																		a(href='#')  API Trading
+														.col-sm-3.link-list
+															p
+																ul
+																	li
+																		i(class='fa fa-globe')
+																		a(href='#')  Trading Instruments
+																	li
+																		i(class='fa fa-shield')
+																		a(href='#')  Islamic Account
+														.col-sm-3.link-list
+															p
+																ul
+																	li
+																		i(class='fa fa-globe')
+																		a(href='#')  Deposit / Withdrawal
+																	li
+																		i(class='fa fa-shield')
+																		a(href='#')  Contracts Specification
 							li
 								a(href='#') Copy & Invest
 							li
@@ -176,6 +244,3 @@ html
 		//- Include template-specific javascript files by extending the js block
 		block js
 		//-script(src='/js/custom/custom.js')
-		script(src='/js/cbpHorizontalMenu.js')
-		script(src='/js/cbpHorizontalMenu.min.js')
-		script(src='/js/modernizr.custom.js')

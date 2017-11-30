@@ -1,3 +1,6 @@
+.jumbotron {
+    border-radius:0px !important;
+}
 .upper-part {
     padding-top: 10px;
  	background: #002159;
@@ -101,6 +104,7 @@
 .navbar {
     border-radius: 0px;
     padding: 20px;
+    margin-bottom: 0px;
 }
 .navbar li {
     margin-bottom: 10px;
@@ -131,31 +135,57 @@
     padding-left: 20px;
     padding-right: 20px;
 }
+.navbar-default {
+    border-bottom: 5px solid #e7e7e7;
+}
 .navbar-brand img {
     max-width: 80px;
 }
-.mega-menu {
-  padding: 10px 0px ! important;
-  width: 540px;
-  border-radius: 0;
-  margin-top: 0px;
+.yamm .container {
+    position: static !important;
 }
-.mega-menu li {
-    display: inline-block;
-    float: left;
-    font-size: 0.94rem;
-    padding: 3px 0px;
+.yamm .container .dropdown-menu {
+    left:0;
+    width:100%;
+}
+.yamm .dropdown-menu > li {
+    display: inline-block;   
+}
+.dropdown-menu {
+    background: #e7e7e7;
+}
+.navbar li {
+    list-style: none;
+}
+.first-column {
+    padding: 0px;
+}
+.yamm-content .first-column li a:hover::after {
+    width:0;
+}
+.yamm-content .first-column li a:hover {
+    color: white !important;
+    text-decoration: none;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    border-radius: 4px;
 }
 
-.mega-menu li.mega-menu-column {
-    margin-right: 20px;
-    width: 150px;
+.yamm-content .link-list li a:hover::after {
+    width:0;
 }
-.mega-menu .nav-header {
-    padding: 0 !important;
-    margin-bottom: 10px;
-    display: inline-block;
-    width: 100%;
-    border-bottom: 1px solid #ddd;
+.yamm-content .link-list li {
+    opacity: 0.6;
+    padding-bottom: 5px;
 }
-.mega-menu img { padding-bottom: 10px;}
+.yamm-content .link-list li:hover {
+    opacity: 1 !important;
+    text-decoration: none ;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    border-radius: 4px;
+}
