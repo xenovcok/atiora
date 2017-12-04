@@ -1,23 +1,136 @@
 extends ../layouts/atiora
 
 block content
-	.container: .jumbotron
-		img(src='/images/logo.svg', width='160')
-		h1 Welcome
-		p This is your new <a href='http://keystonejs.com' target='_blank'>KeystoneJS</a> website.
-		p It includes the latest versions of
-			| <a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>
-			| and <a href='http://www.jquery.com/' target='_blank'>jQuery</a>.
-		p Visit the <a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a> guide to learn how to customise it.
-		hr
-		if user && user.canAccessKeystone
+	section(id='sec-1', class='section')
+		.container.contentViewport
+			.row
+				.col-md-5.col-sm-12.col-xs-12.hidden-xs
+					table(class='table-responsive')
+						tbody
+							tr
+								th.n_border
+								th.blue(style='vertical-align: middle;') MICRO
+								th.purple CLASSIC
+								th.blue PRO
+							tr
+								td
+									span Min deposit
+								td $1
+								td $50
+								td $1000
+							tr
+								td
+									span Leverage
+								td 1:1000
+								td 1:500
+								td 1:100
+							tr
+								td
+									span Spread from
+								td
+									span 3.0 pips
+								td
+									span 0.8 pips
+								td 0.01 pips
+							tr
+								td
+									span Commission
+								td $0
+								td $0
+								td
+									span $10 per lot
+							tr
+								td
+									span Instruments
+								td(colspan='3')
+									span 96+ FX pairs, CFDs, metals, commodities
+							tr
+								td
+									span Execution
+								td STP
+								td STP
+								td STP
+							tr
+								td
+									span Minimal Lot
+								td 0.01
+								td 0.01
+								td 0.1
+							tr
+								td.n_border
+								td.open-account_1st
+									a.like-link(href='http://my.atiora.com/main/register')
+										span
+											| Open
+											br
+											|  account
+								td.open-account
+									a.like-link(href='http://my.atiora.com/main/register')
+										span Open account
+								td.open-account
+									a.like-link(href='http://my.atiora.com/main/register')
+										span Open account
+				.col-md-1.hidden-sm.hidden-xs(style='text-align:center')
+					img(src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAEsBAMAAAAInj8RAAAAFVBMVEUAAAD///////////////////////9Iz20EAAAAB3RSTlMAQexMTeE0sxXWQQAAAEpJREFUOMtjYGBWZGCgNslCFzNZqG0yYRsHQTgMfpJq8TII0h7OtEHddDWM0g8LMnuIpD0WCDmkwp8WuYOF7uZQ7gbK7WUMY2AAAMX3KoL1iaj0AAAAAElFTkSuQmCC')
+				.col-md-6.col-sm-12.col-xs-12
+	#sec-stats.section
+		.container
+			.row
+				ul#statsList
+					li.first-child
+						span.lrgTxt $1
+						span Minimum deposit
+					li
+						span.lrgTxt
+							| 0.02
+							br
+							span pips
+						span Floating spread from
+					li
+						span.lrgTxt
+							| 0.01
+							br
+							span lot
+						span Minimum volume
+					li
+						span.lrgTxt
+							| 0.1
+							br
+							span sec
+						span Trade execution from under
+					li
+						span.lrgTxt
+							| ECN
+							br
+							span broker
+					li.last-child
+						span.lrgTxt 1:1000
+						span Trade execution from under
+			// /row
+		// /container
+	section
+		.container.space-32
+			h1 Fair ECN Forex broker ATIORA
+			hr.blue
+			| Atiora company offers customers on-line trading services on international Forex market. At the disposal of our customers’ trade more than 
+			a(title='Forex trading instruments', href='http://atiora.com/ms/trade/trading-instruments/') 84 currency pairs, CFD, indexes, stocks and commodities
+			| .
 			p
-				a(href='/keystone').btn.btn-lg.btn-primary Open the Admin UI
-		else
-			p We have created a default Admin user for you with the email <strong>admin@atiora.com</strong> and the password <strong>admin</strong>.
 			p
-				a(href='/keystone/signin', style='margin-right: 10px').btn.btn-lg.btn-primary Sign in
-				|  to use the Admin UI.
-		hr
-		p Remember to <a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a> and
-			| <a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.
+				strong ATIORA
+				|  is registered broker. Atiora Ltd. Registered in St.Vincent and Grenadines under the number 
+				a(href='http://atiora.com/en/company/regulations/') 22938
+				| .
+			p
+				| Each client will find its ATIORA – from 
+				a(title='ECN forex trading', href='http://atiora.com/en/trade/account-types/') day-trading
+				| , 
+				a(href='http://atiora.com/en/copy-invest/mam-system/') PAMM system
+				|  and 
+				a(title='forex copy system mql5', href='http://atiora.com/en/copy-invest/mql5/') Forex copy System
+				|  to our unique Service for Investors 
+				a(title='Atiora ProC-Trading', href='http://atiora.com/en/copy-invest/proc-trading/') “ProC-Trading”
+				| . We use only the most modern solutions in the Forex market and offer to trader and investors the most advanced and stable ECN trading. No requotes, delays and glitches – all absolutely transparent and fairly!
+
+					
+
