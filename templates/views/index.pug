@@ -131,6 +131,122 @@ block content
 				|  to our unique Service for Investors 
 				a(title='Atiora ProC-Trading', href='http://atiora.com/en/copy-invest/proc-trading/') “ProC-Trading”
 				| . We use only the most modern solutions in the Forex market and offer to trader and investors the most advanced and stable ECN trading. No requotes, delays and glitches – all absolutely transparent and fairly!
-
-					
+	section.tab-section
+		.container
+			.row.space-32
+				#main_page_tabs.col-md-12
+					ul.nav.nav-tabs
+						li.active
+							a(data-toggle='tab', href='#pamm') PAMM managers ratings
+						li
+							a(data-toggle='tab', href='#mql5') MQL5 signals
+						li
+							a(data-toggle='tab', href='#kopir') MyDigitrade CopyFX
+						li
+							a(data-toggle='tab', href='#kalend') Economic Calendar
+					.tab-content.col-xs-12
+						#pamm.tab-pane.fade.in.active(style='')
+							iframe(src='https://my.atiora.com/en/main/pamm_rating_atioraWP?lt=1', width='100%', height='480', frameborder='1')
+						#mql5.tab-pane.fade(style='')
+							iframe(src='https://www.mql5.com/en/signals/widget/showcase/1tvu', width='100%', height='480', frameborder='1')
+						#kopir.tab-pane.fade(style='')
+							script(type='text/javascript', src='https://my.digitrade.pro/client/widget.js')
+							script(type='text/javascript').
+								new TRADE_WIDGET(1, "my.digitrade.pro", {"theme":"white","language":"en","wl":1});
+							iframe(src='http://my.digitrade.pro/widget.html#/ratingTabs?wl=1&language=en&theme=white', frameborder='0', width='100%', height='485px', marginwidth='0', marginheight='0')
+						#kalend.tab-pane.fade(style='')
+							iframe(frameborder='0', scrolling='auto', height='480', width='100%', allowtransparency='true', src='https://sslecal.forexprostools.com/e_cal.php?force_lang=en', align='center')
+					// tab-content col-xs-12
+				// col-md-12
+	section.space-32
+		.container
+			h2 What is Forex?
+			hr.blue
+			p
+				| Forex – the international currency market where one currency is traded for another. The principle of operation at Forex market is similar with any other market: buy cheap and sell expensive. But not products buying and selling here, the currency – the euro (EUR), US dollar (USD), Pound (GBP), the yen (JPY) and others. Sale by one FX rate and buy by another- the difference between the rates converted into profits, which is produced by the participants of the Forex market – banks, investors and speculators.
+			p
+				| In the present day market Forex – is a unified network of interconnected banks and brokers, which has no specific geographical locations and time constraints of trade – trading begins Monday morning in New Zealand and closes on Friday night in the United States. Trader in the currency market could be anyone, regardless of its location and the level of knowledge as to start Forex trading requires only access to the Internet.
+			p
+				| Get practical skills in the market and test your own trading strategies can 
+				a(title='open forex demo account', href='http://atiora.com/demo-download/') open a demo account 
+				|  with 
+				b ATIORA
+				| , which does not require any of own funds – the company ATIORA provide such account to you within 30 seconds!
+	section.trading-promo
+		.container
+			.trading-promo-actions.col-md-10.n_float
+				.promo-item.promo-item-contest.col-sm-4
+					a.promo-item-action(href='/contests/')
+						span.promo-item-action-helper
+							strong Register, trade and win!
+							i
+								| Atiora 
+								strong contests
+							em $20,000 prize for trading at demo and real accounts profitably
+				.promo-item.promo-item-bonus.col-sm-4
+					a.promo-item-action(href='/atiora-reward/')
+						span.promo-item-action-helper
+							strong Join Atiora Reward Program!*
+							i
+								strong Atiora Reward Program
+							em *Terms and conditions apply
+				.promo-item.promo-item-cash.col-sm-4
+					a.promo-item-action(href='/trade/deposit-withdrawal/')
+						span.promo-item-action-helper
+							strong Deposit your account!
+							img(src='http://atiora.com/wp-content/themes/blain/images/payments/visa-mc-wire.png', alt='Visa, MasterCard, Bank transfer')
+							em No commission
+	section
+		.container.space-32
+			h2 ECN trading – a new wave of Forex!
+			hr.blue
+			p
+				| ECN-Broker earns only on commission from the transaction, which was carried out by you. Thus, ATIORA company is interested in the success of your trading and give you everything you need to make sure that trading is easy, laid-back, but at 100% profitable.
+			p
+				strong ECN-Broker
+				|  brings each FX order to prime bank, where broker find the best quotes for you. Closing and opening position can occur at various counterparties, they are sufficient, as well as liquidity, so the problems with requotes does not arise, it is also one of the advantages of ECN trading with 
+				strong
+					u ATIORA Forex broker 
+				| .
+			p
+				| Certain 
+				strong ECN-Brokers
+				|  allows traders to choose their own contractor, regardless of what his quote at the moment – for better or worse. We do not have fixed spreads – just floating 5-digit quotations that we receive directly from prime banks.
+			p
+				| Based on the above information provided by each trader decides for himself through whom to trade on the basis of their financial capabilities and nuances of a trading strategy. Bu it is clear that 
+				i ECN-Broker ATIORA
+				|  is the next step in the organization a clearer trade in Forex market.	
+	section
+		.container.space-32
+			.row
+				.col-md-6
+				.col-md-6
+	section.get-started
+		.container.space-32
+			h2 Let’s Get Started
+			ul
+				li
+					i.fa.fa-users
+					br
+					h3 Open account
+					p.text-justify
+						| If you satisfied with Atiora ECN trading conditions you may start right now by opening Forex trading account or try Demo account for free.
+					p
+						a.btn-default(href='https://my.atiora.com/en/user/index', target='_top') Open account
+				li
+					i.fa.fa-tablet
+					br
+					h3 Choose a platform
+					p.text-justify
+						| Atiora is pleasured to provide to you wide range of trading platform. Feel free to choose appropriate one!
+					.icons-list
+				li
+					i.fa.fa-bar-chart
+					br
+					h3 Deposit Funds
+					p.text-justify
+						| You may choose any from wide range of electronic payment system or deposit directly to our bank account or transfer funds from your card.
+					p
+						a.btn-default(href='http://atiora.com/trade/deposit-withdrawal/', target='_top') Deposit funds
+	
 
