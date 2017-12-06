@@ -216,13 +216,53 @@ block content
 				| Based on the above information provided by each trader decides for himself through whom to trade on the basis of their financial capabilities and nuances of a trading strategy. Bu it is clear that 
 				i ECN-Broker ATIORA
 				|  is the next step in the organization a clearer trade in Forex market.	
-	section
-		.container.space-32
+	section(class='slider-section')
+		.container
 			.row
-				.col-md-6
-				.col-md-6
+				.col-md-5.col-md-offset-1.slider-content
+					div(id='myCarousel', class='carousel slide', data-ride='carousel')
+						ol(class='carousel-indicators')
+							li.active(data-target='#myCarousel', data-slide-to='0')
+							li(data-target='#myCarousel', data-slide-to='1')
+							li(data-target='#myCarousel', data-slide-to='2')
+							li(data-target='#myCarousel', data-slide-to='3')
+						.carousel-inner
+							.item.active
+								.carousel-caption.pull-left
+									p
+										ul
+											li Spread from 0.05 pips
+											li STP execution < 5 ms
+											li Light ECN  trading
+											li Real Trading starts from $ 50
+											li Arbitration, EA and scalping allowed
+							.item
+								.carousel-caption
+									h3 MT4 Trading Terminal
+									p MetaTrader4 most modern trading terminal for online trading in the Forex market. ATIORA enables each trader to gain access to the Forex market, regardless of the type of device that he uses.
+							.item
+								.carousel-caption
+									h3 Agent System
+									p ATIORA offers a unique program of “Forex agent” – each partner can use any means to attract customers, reaching certain indicators, will raise the level and therefore the size of the agency commission.
+									a(href='http://atiora.com/en/partner/', tabindex='-1', class='btn btn-sm') Learn more
+									a(title='Agent Program by Atiora ECN Broker', href='https://my.atiora.com/main/register', tabindex='-1', class='btn btn-sm') Become Agent
+									a(href='http://atiora.com/partner/advantages/', tabindex='-1', class='btn btn-sm') Advantages
+
+							.item
+								.carousel-caption
+									h3 Forex Contest
+									p ECN Brokers ATIORA offers customers weekly, monthly, quarterly and annual competitions with prize fund of more than $ 50,000. Competitions are held on demo accounts as well as on real forex accounts.
+									p
+										a.atiora-slider-link(href='http://atiora.com/contests/', title='Atiora Forex Contets', alt='Atiora Forex Contest', tabindex='-1') Learn more
+										a(href='http://atiora.com/contests/', title='Atiora Forex Contest', alt='Atiora Forex Contest', tabindex='-1') Take part in the contest
+
+				.col-md-5
+					.left_part
+						a.btn.btn-primary.btn-block.btn-lg(href='http://atiora.com/en/demo-download') Open Demo Account
+						a.btn.btn-primary.btn-block.btn-lg(href='https://my.atiora.com/main/register') Open Live Account
+
 	section.get-started
-		.container.space-32
+		.container
 			h2 Let’s Get Started
 			ul
 				li
