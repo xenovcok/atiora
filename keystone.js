@@ -10,12 +10,13 @@ var keystone = require('keystone');
 // and documentation.
 
 keystone.init({
-	'name': 'atiora',
-	'brand': 'atiora',
+	'name': 'Atiora',
+	'brand': 'Atiora',
 
 	'less': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
+	'signin logo': ['../images/atiora-logo.png', 300, 60],
 	'views': 'templates/views',
 	'view engine': 'pug',
 

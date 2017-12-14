@@ -1,0 +1,68 @@
+extends ../../layouts/atiora
+
+block content
+	section(id='about', class='section')
+		.container.contentViewport
+			.row.content-entry.text-justify
+				h2 Safety of Funds
+				.col-md-12.clearfix
+					.col-md-5.pull-left.funds_block
+						p
+							| ATIORA LTD is obligated to segregate the money that retail clients deposit in order to prevent the use of client funds by the firm for its own account.
+						p
+							| Atiora ensures that additional measures are taken to guarantee clients money is held in a separate account away from any accounts belonging to the firm. In the unlikely event of a default, the segregation of client’s funds will return the money to the clients rather than be treated as a recoverable asset by general creditors of Atiora Ltd.
+					.col-md-1
+					.col-md-5.pull-right
+						img(src='http://atiora.com/wp-content/themes/blain/images/funds.png', alt='Safety', width='100%')
+	section.safety_frap.light_grey_bg
+		.section-in.container
+			.row.content-entry
+				.col-md-12.clearfix
+					.col-md-5.pull-left
+						h2 Segregated Accounts
+						hr.blue
+						p Atiora does not commingle clients’ funds with its corporate operating funds.
+						p
+							| Clients’ assets and Atiora`s assets are held on deposit in different accounts to prevent the misuse of clients’ assets for internal purposes.
+						p
+							| Please contact Atiora to learn more about our commitment to provide a secure trading experience for all clients.
+					.col-md-1
+					.col-md-6.pull-right.segregated_block
+						p
+							| Safeguarding our clients’ funds and assets is a primary objective of Atiora.
+							| We fulfill this requirement through the following means:
+						#accordion(role='tablist')
+							.card
+								#headingOne.card-header(role='tab')
+									h5.mb-0
+										a(data-toggle='collapse', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+											| Maintenance of Licenced and Regulated Status
+								#collapseOne.collapse(role='tabpanel', aria-labelledby='headingOne', data-parent='#accordion')
+									.card-body
+										| Atiora ltd. became licensed and regulated in full conformance with International Business Companies (Amendment and Consolidation) Act, chapter 149 of the revised laws of Saint Vincent and the Grenadines, 2009, section 5(1) as a Forex Dealer, enabling us to provide brokerage, market-making, and dealing services across all asset classes.
+							.card
+								#headingTwo.card-header(role='tab')
+									h5.mb-0
+										a.collapsed(data-toggle='collapse', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+											| Superior Banking Relationships
+								#collapseTwo.collapse(role='tabpanel', aria-labelledby='headingTwo', data-parent='#accordion')
+									.card-body
+										| Atiora custodies clients’ funds with some of the world’s largest and strongest banks and financial institutions, including banks that enjoy investment-grade credit ratings. We work with large banks with excellent reputations and global presences.
+							.card
+								#headingThree.card-header(role='tab')
+									h5.mb-0
+										a.collapsed(data-toggle='collapse', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+											| Adherence to Anti-Money Laundering Regulations
+								#collapseThree.collapse(role='tabpanel', aria-labelledby='headingThree', data-parent='#accordion')
+									.card-body
+										| Safeguarding the integrity of the international financial system is mandatory when dealing in the capital markets and handling clients’ assets. Atiora is fully compliant with global anti-money laundering regulations, primarily through verifying the identity of all clients before entering into a client relationship.
+							.card
+								#headingFour.card-header(role='tab')
+									h5.mb-0
+										a.collapsed(data-toggle='collapse', href='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
+											| No Third-part Funding
+								#collapseFour.collapse(role='tabpanel', aria-labelledby='headingFour', data-parent='#accordion')
+									.card-body
+										| Atiora Ltd. does not permit third-party account funding. Atiora can only accept funds from Atiora account-holders who have previously been approved by Atiora. Funding from third parties cannot be accepted because it would inhibit our ability to adhere to anti-money laundering regulations and best international practices.
+
+	section.safety_frap.grey_bg
