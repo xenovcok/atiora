@@ -1,0 +1,22 @@
+extends ../../layouts/atiora
+
+mixin post(post)
+	.post.text-justify(data-ks-editable=editable(user, { list: 'Post', id: post.id }))
+		h2: a(href='/blog/post/' + post.slug)= post.title
+		p.lead.text-muted
+			if post.publishedDate
+				| #{post._.publishedDate.format('MMMM Do, YYYY')} 
+		if post.image.exists
+			img(src=post._.image.fit(160,160)).img.pull-right
+		p!= post.content.brief
+		if post.content.extended
+			p.read-more: a(href='/blog/post/' + post.slug) Read more...
+
+block content
+	.container: .row
+		.col-sm-8.col-md-12
+			h1 Company News
+			hr.blue
+			each post in data.posts.results
+				+post(post)
+					
