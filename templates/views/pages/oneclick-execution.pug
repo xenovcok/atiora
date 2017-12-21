@@ -1,0 +1,111 @@
+extends ../../layouts/atiora
+
+block content
+	section(id='about', class='one_click_wrap almost_white_bg')
+			.container.contentViewport
+				.row.content-entry.text-justify
+				h1 One-Click Execution
+				h3
+					| Atiora`s One-Click Trader expands the functionality
+					br
+					| of MetaTrader 4.
+				.clearfix
+					.pull-left.col-md-6
+						p
+							| Traders can now benefit more from the exceptional execution speed for buy/sell orders,
+							br
+							| acquiring an unforgettable experience of a real time trading!
+							br
+							| Make forex trades with a single click! This add-on gives you the following benefits:
+						ul.benefits
+							li
+								i.fa.fa-chevron-right
+								|  Create buy and sell orders with a push of a button
+							li
+								i.fa.fa-chevron-right
+								|  One click to close all your positions – including hedging
+							li
+								i.fa.fa-chevron-right
+								|  See your profits and losses in pips
+							li
+								i.fa.fa-chevron-right
+								|  Place stop losses and take profits in pips
+						.btn_section
+							a(href='/files/one-click-trading.pdf', target='_blank', alt='Download One-Click Trader', title='Download Atiora One-Click Trader') Download One-Click Trader
+						p
+							a.pdf_download.green-link(href='/files/one-click-trading.pdf', target='_blank', alt='Download Forex One-Click Trader', title='Download Atiora Forex One-Click Trader') Download user manual (PDF)
+					.pull-right.col-md-6
+						.trader_plugin_img
+						#accordion(role='tablist')
+							.card
+								#headingOne.card-header(role='tab')
+									h5.mb-0
+										a(data-toggle='collapse', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+											| Troubleshoot
+								#collapseOne.collapse(role='tabpanel', aria-labelledby='headingOne', data-parent='#accordion')
+									.card-body
+										p
+											strong If you experience Error 126 then download and install:
+										ol
+											li
+												a.green-link(href='https://www.microsoft.com/en-us/download/details.aspx?id=5582') https://www.microsoft.com/en-us/download/details.aspx?id=5582
+											li
+												a.green-link(href='https://www.microsoft.com/download/en/details.aspx?id=8328') https://www.microsoft.com/download/en/details.aspx?id=8328
+										p
+											| If After a successful install one-click trader is not available in the platform try this: One Click Trader (OCT) installer has option Desktop which creates all necessary files to your desktop to MQL4 folder.
+										p
+											| After the installation is complete copy files from your desktop MQL4 folder to your MT4 Data Folder (Inside your MT4 terminal choose File-Open Data Folder). After you have done that restart your MT4
+	section.spread_ind_wrap.light_grey_bg
+		.section-in.container
+			.row
+				h2 SPREAD INDICATOR
+				.clearfix
+					.pull-left.col-md-6
+						.indicator_img
+					.pull-right.col-md-6
+						p
+							| To install the indicator please close the MetaTrader4 trading platform and save the indicator file to the following folder:
+						p
+							strong (Inside your MT4 terminal choose File-Open Data Folder) > MQL4/indicators.
+							br
+							| Start the trading platform, open a chart with any symbol. Then go to 
+							strong Insert menu > Indicators > Custom and choose Spread.
+						.btn_section
+							a.pdf_download(href='/files/Spread.mq4', target='_blank', alt='Download Spread Indicator', title='Download Spread Indicator') Download Spread Indicator
+						.forex-service
+							p Spread Indicator software was delivered by
+							p
+								a(href='#')
+									img(src='http://atiora.com/wp-content/themes/blain/images/oneclick/forex-service.png', alt='foreXService')
+	section.historical_wrap.grey_bg
+		.section-in.container
+			.row(style='margin-bottom:20px;')
+				h2(style='text-align:center;') HISTORICAL DATA
+				p  
+				.clearfix
+					.pull-left.col-md-6
+						p You can download historical data in the following way:
+						ol
+							li Open your Atiora MT4
+							li Tools – History Center
+							li Select the desired fx currency pair and press download
+					.pull-right.col-md-6
+						p In this way all timeframes will be downloaded for the selected currency pair.
+						p
+							i NOTE:
+						p In this way you will be downloading historical data from MetaQuotes server.
+	section(id='reg-button', class='section')
+		.container.contentViewport
+			.row.content-entry.text-center
+				p Start trading through STP technology with ECN broker Atiora today!
+				.btn_section.live-account
+					noindex
+						a.btn-live-acc(href='https://my.atiora.com/en/main/register', rel='nofollow')
+							| Open trading account 
+							i.fa.fa-chevron-right
+				.btn_section
+					a.btn-demo-acc(href='http://atiora.com/en/demo-download/')
+						| Demo account 
+						i.fa.fa-chevron-right
+				div(style='margin-top: 20px;')
+					a(class='green-link', href='https://download.mql5.com/cdn/web/atiora.limited/mt4/atiora4setup.exe', alt='Download Atiora MetaTrader 4', titlte='Download Atiora MetaTrader 4') Download MetaTrader 4

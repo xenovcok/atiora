@@ -105,6 +105,7 @@
     border-radius: 0px;
     padding: 20px;
     margin-bottom: 0px;
+    font-weight: bold;
 }
 .navbar li {
     margin-bottom: 10px;
@@ -206,7 +207,7 @@ table {
     font-weight: normal;
 }
 
-.contentViewport table > tbody > tr > td, .contentViewport table > tbody > tr > th, .contentViewport table > tfoot > tr > td, .contentViewport table > tfoot > tr > th, .contentViewport table > thead > tr > td, .contentViewport table > thead > tr > th {
+#sec-1 .contentViewport table > tbody > tr > td, #sec-1 .contentViewport table > tbody > tr > th, #sec-1 .contentViewport table > tfoot > tr > td, .sec-1 .contentViewport table > tfoot > tr > th, #sec-1 .contentViewport table > thead > tr > td, #sec-1 .contentViewport table > thead > tr > th {
     border: 1px solid #fff;
     color: #fff;
     padding: 7px 15px;
@@ -223,6 +224,7 @@ table {
 
 .n_border {
     border: none !important;
+    background: none !important;
 }
 
 .contentViewport table > tbody > tr > td.open-account_1st {
@@ -857,4 +859,154 @@ blockquote {
 .post {
     padding: 10px 0px;
     margin-bottom: 10px;
+}
+
+#top-line {
+    width: 100%;
+    background: #f1f3f5;
+    background: url(/images/bc0.jpg);
+    padding: 22px 0;
+    text-align: center;
+    position: relative;
+}
+#top-line ul li {
+    display: inline-block;
+    font-size: 1.059em;
+    font-weight: 300;
+    line-height: 1.2em;
+    margin: 0 15px;
+    padding: 8px 0;
+    position: relative;
+}
+#top-line ul li a {
+    color: #fff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.48);
+    font-family: "CoreSansE-35Light";
+}
+#top-line ul li a:hover {
+    border-color: #fff;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+.account-types thead tr th {
+    color: black;
+}
+.account-types tbody tr td {
+    color: black !important;
+    padding: 5px;
+}
+
+.one_click_wrap .trader_plugin_img {
+    background: url(/images/one-click-trader.png);
+    background-repeat: no-repeat;
+    min-height: 217px;
+    margin-bottom: 15px;
+    background-size: contain;
+}
+.one_click_wrap ul.benefits {
+    margin-top: 22px !important;
+    margin-left: 0!important;
+}
+.one_click_wrap h3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.one_click_wrap ul.benefits {
+    margin-top: 22px !important;
+    margin-left: 0!important;
+    padding-left: 0px;
+}
+.more_about ul li, .one_click_wrap ul li {
+    margin-bottom: 5px;
+    transition: all .3s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    cursor: default;
+    list-style: none;
+}
+.one_click_wrap .btn_section, .spread_ind_wrap .btn_section, .historical_wrap .btn_section {
+    margin-top: 80px !important;
+    text-align: center;
+}
+.one_click_wrap .btn_section + p {
+    text-align: center;
+    margin-top: 5px;
+}
+.one_click_wrap .btn_section a, .spread_ind_wrap .btn_section a, .historical_wrap .btn_section a {
+    width: 240px;
+}
+.indicator_img {
+    background: url(/images/spread.png);
+    background-repeat: no-repeat;
+    height: 400px;
+    background-size: contain;
+}
+.forex-service {
+    margin-top: 40px;
+}
+.forex-service p {
+    text-align: center;
+    margin-top: 20px;
+}
+.spread_ind_wrap h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.yamm-content {
+    padding: 10px 20px !important;
+}
+
+.account-types tbody > tr > td {
+    padding: 10px;
+    border-right: 1px solid grey;
+    border-top: 1px solid grey;
+    text-align: center;
+    font-size: 16px;
+    _background: #f6f6f6;
+}
+
+.account-types tbody > tr > td:nth-child(2), .account-types tbody > tr > td:nth-child(4) {
+    background: #f6f6f6;
+}
+.account-types thead > tr > th {
+    background: #e9f0f6;
+    border-bottom: 3px solid #002159;
+    height: 50px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    border: 1px solid grey;
+}
+
+.account-types tbody > tr > td:first-child {
+    border-left: 1px solid grey;
+}
+.account-types tbody > tr > td .fa-check {
+    font-size: 30px;
+    color: #7ab739;
+}
+.account-types tbody > tr > td.open-account:nth-child(2) {
+    background-color: #206cb3;
+    border: 2px solid #206cb3;
+}
+.account-types tbody > tr > td.open-account a {
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    border-bottom: none;
+    font-weight: bold;
+}
+
+.account-types tbody > tr > td.open-account a:hover {
+    color: #002159;
+}
+
+.account-types .contentViewport table>tbody>tr>td.open-account:hover, .account-types .contentViewport table>tbody>tr>td.open-account_1st:hover {
+    background: none;
+    color: #002159;
 }
